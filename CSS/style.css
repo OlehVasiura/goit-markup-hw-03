@@ -25,7 +25,19 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   background: var(--primary-white-color);
@@ -39,6 +51,7 @@ address {
 }
 .link {
   text-decoration: none;
+  display: inline-block;
 }
 .conteiner {
   width: 1128px;
@@ -46,14 +59,11 @@ address {
 }
 /* ---------------Header--------------- */
 .header {
-  /* outline: 2px solid transparent; */
-  border-bottom-width: 7px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--primary-text-color);
+  outline: 1px solid red;
+  width: 1140px;
 }
 .address {
   /* outline: 2px solid transparent; */
-  background-color: orange;
 }
 
 /* -----------------Site Nav----------- */
@@ -62,8 +72,6 @@ address {
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-text-color);
-  outline: 2px solid tomato;
-  background-color: turquoise;
 }
 .site-nav:hover,
 .site-nav:focus {
@@ -115,6 +123,7 @@ address {
 /* ------------HERO---------------------- */
 .hero {
   background: #2e2f42;
+  outline: 1px solid yellow;
 }
 .hero-title {
   font-size: 56px;
@@ -122,11 +131,13 @@ address {
   color: var(--primary-white-color);
   text-align: center;
   letter-spacing: 0.02em;
+  margin: 0 0 0 0;
 }
 /* -------------Section---------------- */
 .section {
   color: var(--primary-text-color);
   background: var(--primary-white-color);
+  outline: 1px solid blueviolet;
 }
 .section-title {
   font-weight: 700;
@@ -136,6 +147,9 @@ address {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+.section-benefit {
+  outline: 1px solid green;
 }
 .list-benefit {
   color: var(--primary-text-color);
@@ -155,6 +169,7 @@ address {
 }
 .section-team {
   background: var(--primery-btn-color);
+  outline: 1px solid darkorange;
 }
 .list-team {
 }
@@ -179,6 +194,7 @@ address {
 /*----------------- Footer------------ */
 .appeal {
   background: var(--primary-text-color);
+  outline: 1px solid aquamarine;
 }
 .logo-second {
   font-family: "Raleway", sans-serif;
