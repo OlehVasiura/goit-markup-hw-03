@@ -46,6 +46,9 @@ body {
 address {
   font-style: normal;
 }
+img {
+  display: block;
+}
 .list {
   list-style: none;
 }
@@ -54,13 +57,17 @@ address {
   display: inline-block;
 }
 .conteiner {
-  width: 1128px;
+  width: 1158px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  padding: 0 15px;
+  /* outline: 2px solid red; */
   margin: 0 auto;
 }
 /* ---------------Header--------------- */
 .header {
-  outline: 1px solid red;
-  width: 1140px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .address {
   /* outline: 2px solid transparent; */
@@ -131,7 +138,8 @@ address {
   color: var(--primary-white-color);
   text-align: center;
   letter-spacing: 0.02em;
-  margin: 0 0 0 0;
+  padding-top: 188px;
+  margin-bottom: 48px;
 }
 /* -------------Section---------------- */
 .section {
@@ -194,7 +202,8 @@ address {
 /*----------------- Footer------------ */
 .appeal {
   background: var(--primary-text-color);
-  outline: 1px solid aquamarine;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .logo-second {
   font-family: "Raleway", sans-serif;
