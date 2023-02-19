@@ -65,12 +65,16 @@ img {
   margin: 0 auto;
 }
 /* ---------------Header--------------- */
-.header {
+/* .header {
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 24px; */
 }
+/* .site-nav {
+  display: flex;
+} */
 .address {
-  /* outline: 2px solid transparent; */
+  outline: 2px solid transparent;
+  display: flex;
 }
 
 /* -----------------Site Nav----------- */
@@ -79,15 +83,34 @@ img {
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-text-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .site-nav:hover,
 .site-nav:focus {
   color: var(--accent);
 }
+.site-nav {
+  display: flex;
+  /* outline: 1px solid tomato; */
+}
+
+.item {
+  margin-right: 40px;
+  outline: 1px solid teal;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
 .auto-nav {
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-text-color);
+}
+.auto-nav {
+  display: flex;
 }
 /* -----------------header---------------- */
 .logo {
