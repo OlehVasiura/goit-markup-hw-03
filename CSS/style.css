@@ -17,14 +17,7 @@
   --primary-white-color: #ffffff;
   --primery-btn-color: #f4f4fd;
 }
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+
 p,
 h1,
 h2,
@@ -48,6 +41,8 @@ address {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .list {
   list-style: none;
@@ -68,20 +63,30 @@ img {
   text-align: center; */
 }
 /* ---------------Header--------------- */
-/* .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-} */
-/* .site-nav {
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-conteiner {
   display: flex;
-} */
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
 .address {
-  outline: 2px solid transparent;
-  display: flex;
+  margin-left: auto;
 }
 
 /* -----------------Site Nav----------- */
-.site-nav .link {
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin-left: 76px;
+  gap: 40px;
+}
+.nav-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -89,15 +94,11 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.site-nav:hover,
-.site-nav:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent);
 }
-.site-nav .item {
-  display: flex;
-  margin-right: 40px;
-  outline: 1px solid tomato;
-  background-color: turquoise;
+.nav-item {
 }
 .item {
 }
@@ -107,51 +108,39 @@ img {
 }
 
 .auto-nav {
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--primary-text-color);
-}
-.auto-nav {
   display: flex;
+  gap: 40px;
 }
 /* -----------------header---------------- */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33px;
+  line-height: 1.33;
   color: var(--accent);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding: 24px 0;
 }
 
 .logo-st {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
   color: var(--primary-text-color);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
-.info {
+
+.contact-link {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
   text-decoration: none;
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
-.info:hover,
-.info:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent);
 }
-.info-tel {
-  text-decoration: none;
-  color: var(--title-text-color);
-  letter-spacing: 0.02em;
-}
-.info-tel:hover,
-.info-tel:focus {
-  color: var(--accent);
-}
+
 /* ------------HERO---------------------- */
 .hero {
   background: #2e2f42;
