@@ -20,32 +20,34 @@
   <body>
     <!-- Top line -->
     <header class="header">
-      <div class="conteiner">
+      <div class="conteiner header-conteiner">
         <nav class="site-nav">
-          <a class="link item" href="./index.html"
-            ><span class="logo">Web</span><span class="logo-st">Studio</span></a
+          <a class="link logo" href="./index.html"
+            >Web<span class="logo-st">Studio</span></a
           >
-          <ul class="site-nav list">
-            <li class="item">
-              <a class="site-nav link" href="./index.html" target="_blank"
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a class="nav-link link" href="./index.html" target="_blank"
                 >Studio</a
               >
             </li>
-            <li class="item">
-              <a class="site-nav link" href="./portfolio.html">Portfolio</a>
-            </li class="item">
-            <li class="item"><a class="site-nav link" href="">Contacts</a></li>
+            <li class="nav-item">
+              <a class="nav-link link" href="./portfolio.html" target="_blank">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address class="address">
           <ul class="auto-nav list">
             <li>
-              <a class="info" href="mailto:info@devstudio.com"
+              <a class="contact-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="info-tel" href="tel:+110001111111"
+              <a class="contact-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -55,10 +57,10 @@
     </header>
     <!-- MAIN-->
     <main>
-      <section>
+      <section class="section section-portfolio">
         <div class="conteiner">
           <h1 class="visually-hidden">social-links</h1>
-          <ul class="list">
+          <ul class="list-filter list">
             <li>
               <button class="button" type="button">All</button>
             </li>
@@ -76,57 +78,67 @@
             </li>
           </ul>
 
-          <ul class="list">
-            <li>
+          <ul class="list cards-list">
+            <li class="cards-item">
               <img
                 src="./images/bankapp.jpg"
                 alt="bankapp"
                 width="360"
                 height="300"
               />
-              <h2 class="example-item">Banking App Interface Concept</h2>
-              <p class="example-title">App</p>
+              <div class="cards-content">
+                <h2 class="example-item">Banking App Interface Concept</h2>
+                <p class="example-title">App</p>
+              </div>
             </li>
-            <li>
+            <li class="cards-item">
               <img
                 src="./images/mobphone.jpg"
                 alt="mobphone"
                 width="360"
                 height="300"
               />
-              <h2 class="example-item">Cashless Payment</h2>
-              <p class="example-title">Marketing</p>
+              <div class="cards-content">
+                <h2 class="example-item">Cashless Payment</h2>
+                <p class="example-title">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="cards-item">
               <img
                 src="./images/notebook.jpg"
                 alt="notebook"
                 width="360"
                 height="300"
               />
-              <h2 class="example-item">Meditaion App</h2>
-              <p class="example-title">App</p>
+              <div class="cards-content">
+                <h2 class="example-item">Meditaion App</h2>
+                <p class="example-title">App</p>
+              </div>
             </li>
-            <li>
+            <li class="cards-item">
               <img
                 src="./images/driver.jpg"
                 alt="drive"
                 width="360"
                 height="300"
               />
-              <h2 class="example-item">Taxi Service</h2>
-              <p class="example-title">Marketing</p>
+              <div class="cards-content">
+                <h2 class="example-item">Taxi Service</h2>
+                <p class="example-title">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="cards-item">
               <img
                 src="./images/phonetime.jpg"
                 alt="phonetime"
                 width="360"
                 height="300"
               />
-              <h2 class="example-item">Screen Illustrations</h2>
-              <p class="example-title">Design</p>
-            </li>
+              <div class="cards-content">
+                <h2 class="example-item">Screen Illustrations</h2>
+                <p class="example-title">Design</p>
+              </div>
+            </li class="cards-item">
             <li>
               <img
                 src="./images/smilegirl.jpg"
@@ -134,38 +146,46 @@
                 width="360"
                 height="300"
               />
-              <h2 class="example-item">Online Courses</h2>
-              <p class="example-title">Marketing</p>
+              <div class="cards-content">
+                <h2 class="example-item">Online Courses</h2>
+                <p class="example-title">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="cards-item">
               <img
                 src="./images/feel-easier.jpg"
                 alt="feel-easier"
                 width="360"
                 height="300"
               />
-              <h2 class="example-item">Instagram Stories Concept</h2>
-              <p class="example-title">Design</p>
+              <div class="cards-content">
+                <h2 class="example-item">Instagram Stories Concept</h2>
+                <p class="example-title">Design</p>
+              </div>
             </li>
-            <li>
+            <li class="cards-item">
               <img
                 src="./images/vegetables-in-bag.jpg"
                 alt="vegetables-in-bag"
                 width="360"
                 height="300"
               />
-              <h2 class="example-item">Organic Food</h2>
-              <p class="example-title">Web Site</p>
+              <div class="cards-content">
+                <h2 class="example-item">Organic Food</h2>
+                <p class="example-title">Web Site</p>
+              </div>
             </li>
-            <li>
+            <li class="cards-item">
               <img
                 src="./images/late.jpg"
                 alt="late"
                 width="360"
                 height="300"
               />
-              <h2 class="example-item">Fresh Coffee</h2>
-              <p class="example-title">Web Site</p>
+              <div class="cards-content">
+                <h2 class="example-item">Fresh Coffee</h2>
+                <p class="example-title">Web Site</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -174,9 +194,8 @@
     <!-- Footer  -->
     <footer class="appeal">
       <div class="conteiner">
-        <a class="link" href="./index.html"
-          ><span class="logo">Web</span
-          ><span class="logo-second">Studio</span></a
+        <a class="link logo-footer" href="./index.html"
+          >Web<span class="logo-second">Studio</span></a
         >
         <p class="appeal-text">
           Increase the flow of customers and sales for your business with
